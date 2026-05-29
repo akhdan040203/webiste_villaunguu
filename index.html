@@ -94,18 +94,15 @@
 
     <main id="home">
       <section class="relative min-h-screen overflow-hidden bg-[#170026] text-white">
-        <video
-          class="absolute inset-x-0 -top-[16%] h-[132%] w-full object-cover object-center"
-          autoplay
-          muted
-          loop
-          playsinline
-          data-hero-video
-          preload="auto"
-          aria-label="Video background perawatan spa"
-        >
-          <source src="./assets/video/heroo.mp4" type="video/mp4" />
-        </video>
+        <div class="hero-youtube" aria-hidden="true">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/rc6wiVNLxuE?autoplay=1&mute=1&loop=1&playlist=rc6wiVNLxuE&controls=0&disablekb=1&fs=0&iv_load_policy=3&modestbranding=1&playsinline=1&rel=0&start=1"
+            title="Video background Ungu Spa"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
         <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.68),rgba(0,0,0,0.38)_48%,rgba(0,0,0,0.18)_78%)]"></div>
         <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black/45 to-transparent"></div>
 

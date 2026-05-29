@@ -22,6 +22,38 @@ footer {
   overflow-x: clip;
 }
 
+.hero-youtube {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #170026;
+}
+
+.hero-youtube iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(125vw, 222.22vh);
+  height: max(70.31vw, 125vh);
+  transform: translate(-50%, -50%);
+  border: 0;
+}
+
+.hero-youtube::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: rgba(23, 0, 38, 0.08);
+}
+
+@media (max-width: 768px) {
+  .hero-youtube iframe {
+    width: max(160vw, 284.44vh);
+    height: max(90vw, 160vh);
+  }
+}
+
 .site-header {
   position: fixed;
   inset: 0 0 auto;
