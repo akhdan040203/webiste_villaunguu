@@ -6,10 +6,20 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+main,
+section,
+footer {
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .site-header {
