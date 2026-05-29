@@ -17,12 +17,15 @@
   <body class="font-sans bg-[#f7f2fb] text-slate-950 antialiased">
     <header class="site-header" data-site-header>
       <nav class="relative flex h-14 w-full items-center justify-between border-b border-white/10 bg-white/10 px-5 shadow-2xl shadow-black/10 backdrop-blur-md md:h-16 lg:px-10">
-        <a class="block size-11 overflow-hidden rounded-full bg-transparent md:size-12" href="#home" aria-label="Unguu Spa">
+        <a class="flex items-center gap-3 text-white" href="#home" aria-label="Ungu Spa Jakarta">
+          <span class="block size-11 overflow-hidden rounded-full bg-transparent md:size-12">
           <img
-            class="h-full w-full object-cover object-center"
+            class="h-full w-full rounded-full object-cover object-center"
             src="./assets/ganbar/logoo.webp"
             alt="Logo Unguu Spa"
           />
+          </span>
+          <span class="text-lg font-black leading-none md:text-xl">Ungu Spa Jakarta</span>
         </a>
 
         <button
@@ -36,13 +39,12 @@
         </button>
 
         <div
-          class="absolute left-5 right-5 top-16 hidden rounded-none border border-white/15 bg-[#24003f]/95 p-5 text-center shadow-xl backdrop-blur-xl md:static md:flex md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:text-left md:shadow-none md:backdrop-blur-none"
+          class="absolute left-5 right-5 top-16 hidden rounded-none border border-white/15 bg-[#24003f] p-5 text-center shadow-xl md:static md:flex md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:text-left md:shadow-none"
           data-menu
         >
           <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#about">Tentang Kami</a>
           <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#services">Paket Layanan</a>
           <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#order">Cara Order</a>
-          <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#footer">Kontak</a>
           <a
             class="mx-auto mt-4 inline-flex h-11 items-center justify-center rounded-none border border-white/40 px-6 text-xs font-black uppercase tracking-wide text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:mx-0 md:mt-0"
             href="https://wa.me/6281316879699"
@@ -62,6 +64,7 @@
           muted
           loop
           playsinline
+          data-hero-video
           preload="metadata"
           aria-label="Video background perawatan spa"
         ></video>
@@ -78,9 +81,12 @@
               terasa lebih ringan, rileks, dan kembali segar.
             </p>
 
-            <div class="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:mt-6">
+            <div class="mt-5 flex flex-row items-center gap-3 lg:mt-6">
               <a class="inline-flex h-11 w-auto items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white shadow-lg shadow-purple-950/20 transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="https://wa.me/6281316879699">
                 Pesan Sekarang
+              </a>
+              <a class="inline-flex h-11 w-auto items-center justify-center rounded-none border border-white/45 px-5 text-sm font-black text-white transition hover:bg-white hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="#services">
+                Lihat Layanan
               </a>
             </div>
           </div>
@@ -134,14 +140,14 @@
                 dan profesional langsung di rumah, hotel, atau apartemen Anda.
               </p>
 
-              <div class="mt-7 grid gap-4 md:grid-cols-2">
-                <article class="feature-card">
-                  <h3>Terapis Berpengalaman</h3>
-                  <p>Setiap sesi ditangani oleh terapis yang terlatih untuk menghadirkan perawatan aman dan nyaman.</p>
+              <div class="mt-8 grid gap-8">
+                <article class="about-text-item">
+                  <h3>Terapis <span>Profesional</span></h3>
+                  <p>Ditangani oleh terapis berpengalaman yang memahami titik tegang tubuh, menjaga etika pelayanan, dan mengutamakan kenyamanan pelanggan selama sesi berlangsung.</p>
                 </article>
-                <article class="feature-card">
-                  <h3>Layanan Panggilan Praktis</h3>
-                  <p>Nikmati treatment favorit Anda tanpa harus keluar rumah, cukup tentukan jadwal dan lokasi.</p>
+                <article class="about-text-item">
+                  <h3>Respons dan Perjalanan <span>Cepat</span></h3>
+                  <p>Tim kami membantu mengatur jadwal dengan cepat, menyesuaikan lokasi pelanggan, dan memastikan terapis berangkat secara efisien agar Anda tidak menunggu terlalu lama.</p>
                 </article>
               </div>
 
@@ -351,10 +357,14 @@
       <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
         <div>
           <a class="flex items-center gap-3" href="#home">
-            <span class="grid size-10 place-items-center rounded-full bg-gradient-to-br from-violet-500 via-purple-700 to-violet-950">
-              <span class="lotus-mark"></span>
+            <span class="block size-11 overflow-hidden rounded-full">
+              <img
+                class="h-full w-full rounded-full object-cover object-center"
+                src="./assets/ganbar/logoo.webp"
+                alt="Logo Unguu Spa"
+              />
             </span>
-            <span class="text-xl font-semibold">Unguu Spa</span>
+            <span class="text-xl font-semibold">Ungu Spa Jakarta</span>
           </a>
           <p class="mt-5 max-w-md leading-7 text-white/68">
             Spa bernuansa ungu untuk perawatan tubuh dan relaksasi dengan pelayanan hangat
@@ -374,7 +384,6 @@
           <div class="mt-4 grid gap-3 text-white/72">
             <p>Area layanan utama Jakarta dan sekitarnya</p>
             <a class="hover:text-white" href="https://wa.me/6281316879699">WhatsApp: 0813 1687 9699</a>
-            <p>hello@unguuspa.com</p>
           </div>
         </div>
       </div>

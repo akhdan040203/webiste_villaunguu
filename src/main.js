@@ -14,6 +14,7 @@ const siteHeader = document.querySelector('[data-site-header]');
 const counters = document.querySelectorAll('[data-count-up]');
 const serviceCarousel = document.querySelector('[data-service-carousel]');
 const testimonialCarousel = document.querySelector('[data-testimonial-carousel]');
+const heroVideo = document.querySelector('[data-hero-video]');
 
 const syncHeaderState = () => {
   siteHeader?.classList.toggle('is-scrolled', window.scrollY > 24);
@@ -35,6 +36,20 @@ menu?.querySelectorAll('a').forEach((link) => {
 
 syncHeaderState();
 window.addEventListener('scroll', syncHeaderState, { passive: true });
+
+const playHeroVideo = () => {
+  if (!heroVideo) return;
+
+  heroVideo.muted = true;
+  heroVideo.loop = true;
+  heroVideo.play().catch(() => {});
+};
+
+playHeroVideo();
+window.addEventListener('load', playHeroVideo);
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) playHeroVideo();
+});
 
 const animateCounter = (counter) => {
   const target = Number(counter.dataset.target ?? 0);
