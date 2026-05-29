@@ -344,6 +344,135 @@ footer {
   color: #d8b4fe;
 }
 
+.location-section .section-kicker {
+  color: #d8b4fe;
+}
+
+.location-section h2 span,
+.location-link em {
+  color: #d8b4fe;
+  font-style: normal;
+}
+
+.location-link {
+  display: grid;
+  grid-template-columns: 4.5rem auto auto;
+  gap: 1.5rem;
+  align-items: start;
+  justify-content: start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2rem 0;
+  color: #ffffff;
+  transition:
+    background 220ms ease,
+    transform 220ms ease;
+}
+
+.location-link:nth-child(odd) {
+  padding-right: 2rem;
+}
+
+.location-link:nth-child(even) {
+  padding-left: 2rem;
+}
+
+.location-link > span:first-child {
+  color: #d8b4fe;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.location-link__arrow {
+  display: inline-grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border: 0;
+  color: #d8b4fe;
+  font-size: 1.5rem;
+  transition:
+    background 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+.location-link.lg\:col-span-2 {
+  grid-template-columns: 4.5rem auto auto;
+}
+
+.location-link h3 {
+  max-width: 34rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.location-link p {
+  margin-top: 1rem;
+  max-width: 32rem;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.location-link:hover {
+  background: rgba(216, 180, 254, 0.06);
+  transform: translateX(0.25rem);
+}
+
+.location-link:hover .location-link__arrow {
+  background: transparent;
+  color: #ffffff;
+  transform: translateX(0.25rem);
+}
+
+@media (max-width: 1023px) {
+  .location-link,
+  .location-link:nth-child(odd),
+  .location-link:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .location-link {
+    position: relative;
+    display: block;
+    padding: 1.25rem 0.85rem;
+  }
+
+  .location-link > span:first-child {
+    display: block;
+    margin-bottom: 0.65rem;
+    font-size: 1.35rem;
+  }
+
+  .location-link h3 {
+    font-size: 1.35rem;
+    line-height: 1.12;
+  }
+
+  .location-link p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .location-link__arrow {
+    position: absolute;
+    top: 1.2rem;
+    right: 0.85rem;
+    width: auto;
+    height: auto;
+    font-size: 1.25rem;
+  }
+
+  .location-link:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 .testimonial-text {
   margin-top: 1rem;
   line-height: 1.75;
