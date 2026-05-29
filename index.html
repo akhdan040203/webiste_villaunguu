@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unguu Spa menghadirkan spa panggilan, perawatan tubuh, dan relaksasi premium dengan suasana tenang."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="icon" type="image/webp" href="./assets/ganbar/logoo.webp" />
+    <title>Ungu Spa</title>
+  </head>
+  <body class="font-sans bg-[#f7f2fb] text-slate-950 antialiased">
+    <header class="site-header" data-site-header>
+      <nav class="relative flex h-14 w-full items-center justify-between border-b border-white/10 bg-white/10 px-5 shadow-2xl shadow-black/10 backdrop-blur-md md:h-16 lg:px-10">
+        <a class="block size-11 overflow-hidden rounded-full bg-transparent md:size-12" href="#home" aria-label="Unguu Spa">
+          <img
+            class="h-full w-full object-cover object-center"
+            src="./assets/ganbar/logoo.webp"
+            alt="Logo Unguu Spa"
+          />
+        </a>
+
+        <button
+          class="inline-flex size-10 items-center justify-center rounded-none border border-white/25 bg-white/10 text-white backdrop-blur md:hidden"
+          type="button"
+          data-menu-toggle
+          aria-label="Buka menu"
+          aria-expanded="false"
+        >
+          <span class="h-0.5 w-5 bg-current before:block before:h-0.5 before:w-5 before:-translate-y-1.5 before:bg-current after:block after:h-0.5 after:w-5 after:translate-y-1 after:bg-current"></span>
+        </button>
+
+        <div
+          class="absolute left-5 right-5 top-16 hidden rounded-none border border-white/15 bg-[#24003f]/95 p-5 text-center shadow-xl backdrop-blur-xl md:static md:flex md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:text-left md:shadow-none md:backdrop-blur-none"
+          data-menu
+        >
+          <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#about">Tentang Kami</a>
+          <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#services">Paket Layanan</a>
+          <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#order">Cara Order</a>
+          <a class="block py-3 text-lg font-semibold text-white/78 transition hover:text-white md:py-2 md:text-sm" href="#footer">Kontak</a>
+          <a
+            class="mx-auto mt-4 inline-flex h-11 items-center justify-center rounded-none border border-white/40 px-6 text-xs font-black uppercase tracking-wide text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:mx-0 md:mt-0"
+            href="https://wa.me/6281316879699"
+          >
+            Hubungi Kami
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="relative min-h-screen overflow-hidden bg-[#170026] text-white">
+        <video
+          class="absolute inset-x-0 -top-[16%] h-[132%] w-full object-cover object-center"
+          src="./assets/video/heroo.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Video background perawatan spa"
+        ></video>
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.68),rgba(0,0,0,0.38)_48%,rgba(0,0,0,0.18)_78%)]"></div>
+        <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black/45 to-transparent"></div>
+
+        <div class="relative z-10 mx-auto grid min-h-screen max-w-6xl items-center px-5 py-24 md:px-8">
+          <div class="max-w-2xl translate-y-8 md:-translate-y-12 lg:max-w-4xl" data-aos="fade-up">
+            <h1 class="max-w-2xl text-[2.75rem] font-semibold leading-[1.02] tracking-normal md:text-6xl lg:max-w-4xl lg:text-8xl">
+             Spa Panggilan Jakarta Profesional 
+            </h1>
+            <p class="mt-5 max-w-xl text-base leading-7 text-white/76 md:text-base md:leading-7 lg:mt-6 lg:max-w-3xl lg:text-xl lg:leading-9">
+              Kami menghadirkan layanan spa panggilan profesional untuk membantu tubuh
+              terasa lebih ringan, rileks, dan kembali segar.
+            </p>
+
+            <div class="mt-5 flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:mt-6">
+              <a class="inline-flex h-11 w-auto items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white shadow-lg shadow-purple-950/20 transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="https://wa.me/6281316879699">
+                Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-[#f7f2fb] py-20 md:py-24">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="text-center" data-aos="fade-up">
+            <div class="mt-8 grid grid-cols-6 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+              <article class="about-stat">
+                <strong data-count-up data-target="20" data-suffix="+">0+</strong>
+                <span>Tahun Pengalaman</span>
+              </article>
+              <article class="about-stat">
+                <strong data-count-up data-target="12" data-suffix="K+">0K+</strong>
+                <span>Sesi Spa Dilayani</span>
+              </article>
+              <article class="about-stat">
+                <strong data-count-up data-target="99" data-suffix="%">0%</strong>
+                <span>Tingkat Kepuasan</span>
+              </article>
+              <article class="about-stat">
+                <strong data-count-up data-target="30" data-suffix="+">0+</strong>
+                <span>Terapis Profesional</span>
+              </article>
+              <article class="about-stat">
+                <strong data-count-up data-target="10" data-suffix="K+">0K+</strong>
+                <span>Pelanggan Puas</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="mt-20 grid items-center gap-10 md:mt-24 lg:grid-cols-[1fr_1.12fr] lg:gap-14">
+            <div class="overflow-hidden rounded-none shadow-2xl shadow-purple-950/10" data-aos="fade-right">
+              <img
+                class="aspect-[4/3.6] w-full object-cover object-center sm:aspect-[4/3.2] lg:aspect-[16/11]"
+                src="./assets/ganbar/about-us.webp"
+                alt="Terapis Unguu Spa memberikan layanan spa"
+              />
+            </div>
+
+            <div data-aos="fade-left">
+              <p class="section-kicker">Tentang Kami</p>
+              <h2 class="mt-3 max-w-4xl text-3xl font-black leading-tight text-[#26003f] md:text-5xl">
+                Ungu Spa Home Massage Hadir di Jakarta
+              </h2>
+              <p class="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
+                Kami menyediakan layanan massage, spa, urut, dan refleksi panggilan untuk
+                area Jakarta. Dengan tenaga terapis berpengalaman dan ready 24 jam. kami berkomitmen memberi pelayanan yang nyaman, sopan,
+                dan profesional langsung di rumah, hotel, atau apartemen Anda.
+              </p>
+
+              <div class="mt-7 grid gap-4 md:grid-cols-2">
+                <article class="feature-card">
+                  <h3>Terapis Berpengalaman</h3>
+                  <p>Setiap sesi ditangani oleh terapis yang terlatih untuk menghadirkan perawatan aman dan nyaman.</p>
+                </article>
+                <article class="feature-card">
+                  <h3>Layanan Panggilan Praktis</h3>
+                  <p>Nikmati treatment favorit Anda tanpa harus keluar rumah, cukup tentukan jadwal dan lokasi.</p>
+                </article>
+              </div>
+
+              <a class="mt-7 inline-flex h-11 items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#3b0066]/30" href="https://wa.me/6281316879699">
+                Konsultasi WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-[#f7f2fb] py-24">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center" data-aos="fade-up">
+            <p class="section-kicker justify-center">Paket Layanan</p>
+            <h2 class="mt-3 text-4xl font-black leading-tight text-[#26003f] md:text-5xl">
+              Pilih paket perawatan unggulan Kami.
+            </h2>
+          </div>
+
+          <div class="service-carousel mt-12" data-service-carousel data-aos="fade-up">
+            <div class="service-carousel__viewport">
+              <div class="service-carousel__track" data-service-track>
+            <article class="service-card" data-service-card>
+              <img src="./assets/ganbar/packages_tradisional.webp" alt="Paket spa tradisional" />
+              <div>
+                <span>24 Jam</span>
+                <h3>Paket Tradisional</h3>
+                <p>Spa tradisional untuk membantu tubuh lebih ringan dan rileks setelah aktivitas.</p>
+              </div>
+            </article>
+            <article class="service-card" data-service-card>
+              <img src="./assets/ganbar/packages_pijatdanlulur.webp" alt="Paket spa dan lulur" />
+              <div>
+                <span>24 Jam</span>
+                <h3>Spa dan Lulur</h3>
+                <p>Kombinasi spa relaksasi dan lulur lembut untuk kulit terasa bersih dan segar.</p>
+              </div>
+            </article>
+            <article class="service-card" data-service-card>
+              <img src="./assets/ganbar/packages_pijatdanrokaan.webp" alt="Paket spa dan rookan" />
+              <div>
+                <span>24 Jam</span>
+                <h3>Spa dan Rookan</h3>
+                <p>Paket perawatan untuk membantu melepas pegal dan memberi sensasi hangat menenangkan.</p>
+              </div>
+            </article>
+            <article class="service-card" data-service-card>
+              <img src="./assets/ganbar/packages_Reflextologi.webp" alt="Paket refleksologi" />
+              <div>
+                <span>24 Jam</span>
+                <h3>Refleksologi</h3>
+                <p>Fokus pada titik refleksi kaki untuk membantu tubuh terasa nyaman dan segar.</p>
+              </div>
+            </article>
+              </div>
+            </div>
+
+            <div class="mt-8 flex justify-center gap-3" data-service-pagination aria-label="Navigasi paket layanan">
+              <button class="service-arrow" type="button" aria-label="Layanan sebelumnya" data-service-prev>
+                <span aria-hidden="true">&larr;</span>
+              </button>
+              <button class="service-arrow" type="button" aria-label="Layanan berikutnya" data-service-next>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="bg-[#f7f2fb] py-24">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center" data-aos="fade-up">
+            <p class="section-kicker justify-center">Cara Order</p>
+            <h2 class="mt-3 text-4xl font-black leading-tight text-[#26003f] md:text-5xl">
+              Pesan layanan spa dengan mudah
+            </h2>
+          </div>
+
+          <div class="relative mt-16 grid gap-6 md:grid-cols-4">
+            <div class="absolute left-0 right-0 top-11 hidden h-px bg-[#d8c7e8] md:block"></div>
+            <article class="step-card" data-aos="zoom-in" data-aos-delay="0">
+              <span>01</span>
+              <h3>Pilih Treatment</h3>
+              <p>Tentukan layanan spa yang paling sesuai dengan kebutuhanmu.</p>
+            </article>
+            <article class="step-card" data-aos="zoom-in" data-aos-delay="100">
+              <span>02</span>
+              <h3>Hubungi Admin</h3>
+              <p>Kirim pesan WhatsApp untuk cek jadwal dan detail treatment.</p>
+            </article>
+            <article class="step-card" data-aos="zoom-in" data-aos-delay="200">
+              <span>03</span>
+              <h3>Konfirmasi Jadwal</h3>
+              <p>Pilih jam kunjungan, jumlah orang, dan paket yang diinginkan.</p>
+            </article>
+            <article class="step-card" data-aos="zoom-in" data-aos-delay="300">
+              <span>04</span>
+              <h3>Datang dan Rileks</h3>
+              <p>Nikmati suasana Unguu Spa dan biarkan tubuhmu pulih pelan-pelan.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimoni" class="bg-[#f7f2fb] py-24">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center" data-aos="fade-up">
+            <p class="section-kicker justify-center">Testimoni</p>
+            <h2 class="mt-3 text-4xl font-black leading-tight text-[#26003f] md:text-5xl">
+              Cerita pelanggan setelah menikmati layanan Unguu Spa.
+            </h2>
+          </div>
+
+          <div class="testimonial-carousel mt-12" data-testimonial-carousel data-aos="fade-up">
+            <div class="testimonial-carousel__viewport">
+              <div class="testimonial-carousel__track" data-testimonial-track>
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Sinta Maharani</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Terapis datang tepat waktu, komunikasinya sopan, dan layanan spa benar-benar membantu badan saya lebih ringan.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Raka Pratama</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Booking via WhatsApp cepat dan jelas. Paket tradisionalnya pas untuk melepas pegal setelah kerja seharian.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Nadia Putri</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Saya suka spa dan lulurnya. Kulit terasa lebih bersih, aromanya nyaman, dan pelayanannya sangat ramah.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Dimas Arya</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Refleksologinya enak sekali. Kaki terasa lebih ringan dan saya bisa tidur lebih nyenyak malamnya.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Melati Anjani</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Pelayanannya terasa profesional dari awal sampai selesai. Cocok untuk yang ingin spa tanpa keluar rumah.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Bagas Wicaksono</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Spa dan rookannya membantu area punggung yang kaku. Terapisnya telaten dan sangat menjaga kenyamanan.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Kirana Safitri</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Admin responsif dan jadwalnya fleksibel. Treatment terasa bersih, nyaman, dan hasilnya memuaskan.</p>
+                </article>
+
+                <article class="testimonial-card" data-testimonial-card>
+                  <div class="testimonial-card__header">
+                    <div>
+                      <h3>Arman Hidayat</h3>
+                    </div>
+                  </div>
+                  <div class="testimonial-stars" aria-label="Rating 5 dari 5">★★★★★</div>
+                  <p class="testimonial-text">Saya pesan untuk orang tua di rumah. Terapisnya sabar, sopan, dan hasil spanya bikin badan lebih nyaman.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="mt-8 flex justify-center gap-3" data-testimonial-pagination aria-label="Navigasi testimoni"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-[#170026] px-5 py-14 text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+        <div>
+          <a class="flex items-center gap-3" href="#home">
+            <span class="grid size-10 place-items-center rounded-full bg-gradient-to-br from-violet-500 via-purple-700 to-violet-950">
+              <span class="lotus-mark"></span>
+            </span>
+            <span class="text-xl font-semibold">Unguu Spa</span>
+          </a>
+          <p class="mt-5 max-w-md leading-7 text-white/68">
+            Spa bernuansa ungu untuk perawatan tubuh dan relaksasi dengan pelayanan hangat
+            dan profesional.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-sm font-black uppercase tracking-[0.2em] text-[#d8b4fe]">Tautan</h3>
+          <div class="mt-4 grid gap-3 text-white/72">
+            <a class="hover:text-white" href="#about">Tentang Kami</a>
+            <a class="hover:text-white" href="#services">Layanan</a>
+            <a class="hover:text-white" href="#order">Cara Order</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-black uppercase tracking-[0.2em] text-[#d8b4fe]">Kontak</h3>
+          <div class="mt-4 grid gap-3 text-white/72">
+            <p>Area layanan utama Jakarta dan sekitarnya</p>
+            <a class="hover:text-white" href="https://wa.me/6281316879699">WhatsApp: 0813 1687 9699</a>
+            <p>hello@unguuspa.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/50 lg:px-8">
+        <p>Copyright 2026 Unguu Spa. Seluruh Hak Dilindungi.</p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/6281316879699"
+      aria-label="Hubungi Unguu Spa lewat WhatsApp"
+    >
+      <span class="whatsapp-float__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img">
+          <path
+            d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L4 20.4l1.3-4A8.3 8.3 0 1 1 20.5 11.8Zm-8.4-6.6a6.6 6.6 0 0 0-5.6 10.1l.3.5-.8 2.3 2.4-.8.5.3a6.6 6.6 0 1 0 3.2-12.4Zm3.8 9.4c-.2.5-1.1 1-1.6 1.1-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.7-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.5.2.6.8 2 .9 2.1.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.6 1.6.3.1.5.1.7-.1.2-.3.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.1.1.7-.1 1.2Z"
+          />
+        </svg>
+      </span>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
