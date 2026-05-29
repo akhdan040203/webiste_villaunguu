@@ -15,6 +15,7 @@ const counters = document.querySelectorAll('[data-count-up]');
 const serviceCarousel = document.querySelector('[data-service-carousel]');
 const testimonialCarousel = document.querySelector('[data-testimonial-carousel]');
 const heroVideo = document.querySelector('[data-hero-video]');
+const leadTriggers = document.querySelectorAll('[data-fb-lead]');
 
 const syncHeaderState = () => {
   siteHeader?.classList.toggle('is-scrolled', window.scrollY > 24);
@@ -49,6 +50,14 @@ playHeroVideo();
 window.addEventListener('load', playHeroVideo);
 document.addEventListener('visibilitychange', () => {
   if (!document.hidden) playHeroVideo();
+});
+
+leadTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    window.fbq?.('track', 'Lead', {
+      content_name: trigger.textContent.trim() || trigger.getAttribute('aria-label') || 'CTA',
+    });
+  });
 });
 
 const animateCounter = (counter) => {

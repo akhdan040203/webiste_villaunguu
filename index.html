@@ -13,8 +13,43 @@
     <link rel="stylesheet" href="/src/styles.css" />
     <link rel="icon" type="image/webp" href="./assets/ganbar/logoo.webp" />
     <title>Ungu Spa</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '899383362874005');
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent', {
+        content_name: 'Ungu Spa Jakarta',
+        content_category: 'Spa Panggilan',
+      });
+    </script>
+    <!-- End Meta Pixel Code -->
   </head>
   <body class="font-sans bg-[#f7f2fb] text-slate-950 antialiased">
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=899383362874005&ev=PageView&noscript=1"
+        alt=""
+      />
+    </noscript>
     <header class="site-header" data-site-header>
       <nav class="relative flex h-14 w-full items-center justify-between border-b border-white/10 bg-white/10 px-5 shadow-2xl shadow-black/10 backdrop-blur-md md:h-16 lg:px-10">
         <a class="flex items-center gap-3 text-white" href="#home" aria-label="Ungu Spa Jakarta">
@@ -49,6 +84,7 @@
           <a
             class="mx-auto mt-4 inline-flex h-11 items-center justify-center rounded-none border border-white/40 px-6 text-xs font-black uppercase tracking-wide text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:mx-0 md:mt-0"
             href="https://wa.me/6281316879699"
+            data-fb-lead
           >
             Hubungi Kami
           </a>
@@ -60,15 +96,16 @@
       <section class="relative min-h-screen overflow-hidden bg-[#170026] text-white">
         <video
           class="absolute inset-x-0 -top-[16%] h-[132%] w-full object-cover object-center"
-          src="./assets/video/heroo.mp4"
           autoplay
           muted
           loop
           playsinline
           data-hero-video
-          preload="metadata"
+          preload="auto"
           aria-label="Video background perawatan spa"
-        ></video>
+        >
+          <source src="./assets/video/heroo.mp4" type="video/mp4" />
+        </video>
         <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.68),rgba(0,0,0,0.38)_48%,rgba(0,0,0,0.18)_78%)]"></div>
         <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black/45 to-transparent"></div>
 
@@ -83,7 +120,7 @@
             </p>
 
             <div class="mt-5 flex flex-row items-center gap-3 lg:mt-6">
-              <a class="inline-flex h-11 w-auto items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white shadow-lg shadow-purple-950/20 transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="https://wa.me/6281316879699">
+              <a class="inline-flex h-11 w-auto items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white shadow-lg shadow-purple-950/20 transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#d8b4fe] focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="https://wa.me/6281316879699" data-fb-lead>
                 Pesan Sekarang
               </a>
               <a class="inline-flex h-11 w-auto items-center justify-center rounded-none border border-white/45 px-5 text-sm font-black text-white transition hover:bg-white hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-[#26003f] md:h-11 md:px-5 lg:h-14 lg:px-8 lg:text-base" href="#services">
@@ -152,7 +189,7 @@
                 </article>
               </div>
 
-              <a class="mt-7 inline-flex h-11 items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#3b0066]/30" href="https://wa.me/6281316879699">
+              <a class="mt-7 inline-flex h-11 items-center justify-center rounded-none bg-[#3b0066] px-5 text-sm font-black text-white transition hover:bg-[#d8b4fe] hover:text-[#170026] focus:outline-none focus:ring-2 focus:ring-[#3b0066]/30" href="https://wa.me/6281316879699" data-fb-lead>
                 Konsultasi WhatsApp
               </a>
             </div>
@@ -438,7 +475,7 @@
           <h3 class="text-sm font-black uppercase tracking-[0.2em] text-[#d8b4fe]">Kontak</h3>
           <div class="mt-4 grid gap-3 text-white/72">
             <p>Area layanan utama Jakarta dan sekitarnya</p>
-            <a class="hover:text-white" href="https://wa.me/6281316879699">WhatsApp: 0813 1687 9699</a>
+            <a class="hover:text-white" href="https://wa.me/6281316879699" data-fb-lead>WhatsApp: 0813 1687 9699</a>
           </div>
         </div>
       </div>
@@ -451,6 +488,7 @@
       class="whatsapp-float"
       href="https://wa.me/6281316879699"
       aria-label="Hubungi Unguu Spa lewat WhatsApp"
+      data-fb-lead
     >
       <span class="whatsapp-float__icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" role="img">
